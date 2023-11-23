@@ -1,3 +1,7 @@
+#it will print out messages that are INFO level or higher, helping you understand what's happening inside your code. 
+#If you have a problem, these messages can give you clues about where to look.
+#Log messages are a way to record information about the execution of a program, and they can be useful for debugging and understanding the flow of a program
+
 import logging
 import requests
 import time
@@ -8,7 +12,9 @@ from aiogram import Bot, Dispatcher, executor, types
 API_TOKEN = '5068695480:AAGFjq07b11NkmxMOSRNCZBhCv5_gmiU4Bs'
 
 # Configure logging
-logging.basicConfig(level=logging.INFO)
+#INFO is a type of message that gives you general information about what your program is doing. 
+#There are other levels like DEBUG (more detailed) and WARNING (something might be wrong).
+logging.basicConfig(level=logging.INFO) 
 
 # Initialize bot and dispatcher
 bot = Bot(token=API_TOKEN)
