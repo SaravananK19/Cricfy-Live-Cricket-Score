@@ -22,7 +22,7 @@ logging.basicConfig(level=logging.INFO)
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 #The Dispatcher is responsible for handling updates from Telegram and directing them to the appropriate handlers.
-#Dispatcher is then initialized with the Bot object. The Dispatcher is responsible for handling updates from Telegram and directing them to the appropriate handlers.
+#Dispatcher is then initialized with the Bot object. 
 
 
 url="https://hs-consumer-api.espncricinfo.com/v1/pages/matches/current?lang=en&latest=true"
@@ -62,7 +62,7 @@ for i,live_match in enumerate(live):
             #print(selected_live)
             
 #These handle commands that users send to the bot, usually starting with a '/'
-#The @dp.message_handler() decorator is used to register a function (send_welcome in this case) as a handler for incoming messages.
+#The @dp.message_handler() decorator is used to register a function as a handler for incoming messages.
 #The decorator specifies that the function should be called when a message is received.
 #The send_welcome function takes a types.Message object as a parameter, which represents the incoming message from the user.
 #Inside this function, you have logic to handle the /start and /help commands.
