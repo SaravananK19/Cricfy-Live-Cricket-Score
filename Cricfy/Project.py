@@ -5,9 +5,9 @@
 import logging
 import requests
 import time
-from aiogram import Bot, Dispatcher, executor, types #that represent different types of objects in the Telegram API.t
+#Executor handling the execution of the bot.
+from aiogram import Bot, Dispatcher, executor, types #that represent different types of objects in the Telegram API.
 #ypes.Message: Represents a message sent by a user.types.User: Represents a Telegram user.types.Chat: Represents a chat in Telegram
-types.Chat: Represents a chat in Telegram (which can be a private chat, group, or channel).
 #dispatcher-  used to handle updates and route them to the appropriate handlers. 
 #Handlers are used to define how your bot should respond to different types of user input or system events.
 
