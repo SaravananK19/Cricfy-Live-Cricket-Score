@@ -28,7 +28,7 @@ if live == []:
 else:
     for i,live_match in enumerate(live):#allows you to access both the index and the value of each element in the live list during the loop iteration.
         selected_live = f"Live {i+1} ->> "+str(live_match[2])+'\n'
-        print(selected_live)
+        print(selected_live)#print the list of live matches
         
     selected_match =input("Select Your Live match: ").lower()
     #if the user enters a string like "live 3" or "live3", strip("live ") will remove the prefix "live "
@@ -38,7 +38,8 @@ else:
     vs = str(live[0][3]) + " VS " + str(live[0][4]) + "\n"
     print(m,"\n",vs)
     #print(user_input)
-    
+    #duplicate values are automatically eliminated, and only unique values are stored in the set. 
+    #To track the unique over
     sets = set({})
     dup = ""
 
